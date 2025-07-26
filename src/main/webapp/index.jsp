@@ -28,7 +28,7 @@
     </form>
     <form action="utilisateurs" method="get" class="mt-4 text-center">
         <input type="hidden" name="action" value="logout">
-<%--        <button type="submit" class="text-indigo-600 hover:underline">Déconnexion</button>--%>
+    <%--        <button type="submit" class="text-indigo-600 hover:underline">Déconnexion</button>--%>
     </form>
 </div>
 </body>

@@ -13,8 +13,8 @@
     <nav class="mb-6">
         <ul class="flex space-x-4">
             <li><a href="boissons" class="text-indigo-600 hover:underline">Boissons</a></li>
-            <li><a href="categories" class="text-indigo-600 hover:underline">Catégories</a></li>
-            <li><a href="utilisateurs?logout" class="text-red-600 hover:underline">Déconnexion</a></li>
+            <li><a href="categories" class="text-indigo-600 hover:underline">Categories</a></li>
+            <li><a href="utilisateurs?logout" class="text-red-600 hover:underline">Deconnexion</a></li>
         </ul>
     </nav>
     <h1 class="text-3xl font-bold mb-6 text-center">Gestion des Boissons</h1>

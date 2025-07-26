@@ -14,8 +14,8 @@
     <nav class="mb-6">
         <ul class="flex space-x-4">
             <li><a href="boissons" class="text-indigo-600 hover:underline">Boissons</a></li>
-            <li><a href="categories" class="text-indigo-600 hover:underline font-bold">Catégories</a></li>
-            <li><a href="utilisateurs?logout" class="text-red-600 hover:underline">Déconnexion</a></li>
+            <li><a href="categories" class="text-indigo-600 hover:underline font-bold">Categories</a></li>
+            <li><a href="utilisateurs?logout" class="text-red-600 hover:underline">Deconnexion</a></li>
         </ul>
     </nav>
 
@@ -56,27 +56,14 @@
                     <td class="p-2 border">${categorie.id}</td>
 
                     <!-- Nom modifiable -->
-                    <td class="p-2 border">
-                        <form action="categories" method="post" class="inline">
-                            <input type="hidden" name="action" value="update">
-                            <input type="hidden" name="id" value="${categorie.id}">
-                            <input type="text" name="nom" value="${categorie.nom}"
-                                   class="border p-1 rounded w-32">
-                        </form>
-                    </td>
+                    <td class="p-2 border">${categorie.nom}</td>
 
                     <!-- Actions -->
                     <td class="p-2 border">
-                        <!-- Bouton Modifier -->
-                        <form action="categories" method="post" class="inline">
-                            <input type="hidden" name="action" value="update">
-                            <input type="hidden" name="id" value="${categorie.id}">
-                            <input type="hidden" name="nom" value="${categorie.nom}">
-                            <button type="submit"
-                                    class="bg-yellow-500 text-white px-2 py-1 rounded-md hover:bg-yellow-600">
-                                Mettre à jour
-                            </button>
-                        </form>
+                        <a href="edit-categorie?id=${categorie.id}"
+                           class="bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600">
+                            Modifier
+                        </a>
 
                         <!-- Bouton Supprimer -->
                         <form action="categories" method="get" class="inline ml-2">
